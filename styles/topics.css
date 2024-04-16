@@ -1,0 +1,62 @@
+.alura-book-topics {
+    background: var(--alura-books-quaternary-color);
+    color: var(--alura-books-secondary-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.alura-books-topics-title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.alura-books-topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.alura-books-topics-item {
+    background-color: var(--alura-books-tertiary-color);
+    padding: 1rem 1.5rem;
+}
+
+.alura-books-topics-link {
+    color: var(--alura-books-secondary-color);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    .alura-book-topics {
+        padding: 2rem 8.79rem;
+    }
+
+    .alura-books-topics-title {
+        font-size: 1.5rem;
+    }
+
+    .alura-books-topics-list {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .alura-book-topics {
+        padding: 4rem 30rem;
+    }
+
+    .alura-books-topics-title {
+        font-size: 2rem;
+        line-height: 48px;
+    }
+
+    .alura-books-topics-link {
+        font-size: 1.5rem;
+    }
+}

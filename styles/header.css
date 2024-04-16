@@ -1,0 +1,189 @@
+.alura-books-title {
+    display: none;
+}
+
+.alura-books-header-options-medium-size {
+    display: none;
+}
+
+.alura-books-header-icons-large-size-dimension-text {
+    display: none;
+}
+
+.alura-books-header {
+    background-color: var(--alura-books-secondary-color);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.alura-books-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.alura-books-menu-hamburguer {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../assets/Menu.svg");
+    display: inline-block;
+}
+
+.alura-books-menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 40%;
+    width: 60%;
+    font-size: 1rem;
+}
+
+.alura-books-header-container-button:checked~.alura-books-menu-list {
+    display: block;
+}
+
+.alura-books-header-container-button {
+    display: none;
+}
+
+.alura-books-menu-list-title, .alura-books-menu-list-item {
+    padding: 1rem;
+    background-color: var(--alura-books-secondary-color);
+}
+
+.alura-books-menu-list-title {
+    color: var(--alura-books-tertiary-color);
+    font-weight: 700;
+}
+
+.alura-books-menu-list-link {
+    background: var(--alura-books-quaternary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+    .alura-books-title-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 11px;
+        padding: 1rem;
+    }
+
+    .alura-books-title {
+        display: block;
+        font-family: var(--alura-books-font-title);
+        font-size: 1.875rem;
+        font-weight: 400;
+        color: var(--alura-books-quinary-color);
+    }
+
+    .alura-books-title-bold {
+        font-weight: 700;
+    }
+
+    .alura-books-header-options-medium-size {
+        display: flex;
+    }
+
+    .alura-books-header-options-item {
+        padding: 0 1rem;
+        text-transform: uppercase;
+        color: var(--alura-books-quinary-color);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .alura-books-header-options-link {
+        text-decoration: none;
+        color: var(--alura-books-quinary-color);
+    }
+
+    .alura-books-header {
+        padding: 0rem 5rem;
+    }
+
+    .alura-books-menu-hamburguer {
+        display: none;
+    }
+
+    .alura-books-header-container {
+        gap: 0;
+    }
+
+    .alura-books-header-icons {
+        gap: 60px;
+    }
+
+    .alura-books-header-icons-favorito {
+        display: none;
+    }
+
+    .alura-books-menu-list {
+        right: 53.7%;
+    }
+
+    .alura-books-header-options-medium-size-button:checked~ .alura-books-menu-list {
+        display: block;
+        width: auto;
+    }
+
+    .alura-books-header-options-medium-size-button:checked ~ .alura-books-header-options-style-color > .alura-books-header-options-item {
+        background: var(--alura-books-quaternary-color);
+        color: var(--alura-books-secondary-color);
+    }
+
+    .alura-books-header-options-item {
+        padding: 1rem 2rem;
+    }
+
+    .alura-books-header-options-medium-size-button {
+        display: none;
+    }
+
+    .alura-books-menu-list-item:hover {
+        background: var(--alura-books-quaternary-color);
+    }
+
+    .alura-books-menu-list-item:hover > .alura-books-menu-list-link {
+        -webkit-text-fill-color: var(--alura-books-secondary-color);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .alura-books-title-container {
+        margin-right: 2rem;
+    }
+
+    .alura-books-header-options-medium-size {
+        margin-right: auto;
+    }
+
+    .alura-books-menu-list {
+        right: 72.4%;
+    }
+
+    .alura-books-header-icons-large-size-dimension {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--alura-books-quinary-color);
+        text-decoration: none;
+    }
+
+    .alura-books-header-icons-large-size-dimension-text {
+        margin-left: 0.5rem;
+        display: flex;
+    }
+}

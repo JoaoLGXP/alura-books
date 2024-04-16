@@ -1,0 +1,68 @@
+.alura-books-footer {
+    padding: 17px 0 24px 24px;
+    border-top: 1px solid var(--alura-books-border-footer-color);
+}
+
+.alura-books-footer-title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--alura-books-quinary-color);
+}
+
+.alura-books-footer-complete {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .alura-books-footer {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 3.5rem 1.5rem 4.375rem 1.5rem;
+    }
+
+    .alura-books-footer-title {
+        font-size: 1.5rem;
+    }
+
+    .alura-books-footer-complete {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alura-books-footer-complete-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; 
+    }
+
+    .alura-books-footer-complete-title {
+        font-size: 0.875rem;
+        margin-bottom: 25px;
+        color: var(--alura-books-border-footer-color);
+    }
+
+    .alura-books-footer-complete-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--alura-books-links-foter-color);
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    .alura-books-footer-complete-link img {
+        margin-right: 8px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .alura-books-footer {
+        padding: 3.5rem 15.5rem 3.5rem 13.25rem;
+    }
+
+    .alura-books-footer-complete {
+        border-left: 1px solid var(--alura-books-border-footer-color);
+        padding-left: 1.25rem;
+    }
+}

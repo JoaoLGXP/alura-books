@@ -1,0 +1,110 @@
+.alura-books-contact {
+    padding: 1.5rem 1.5rem 1.875rem 1.5rem;
+    background-color: var(--alura-books-secondary-color);
+}
+
+.alura-books-contact-title {
+    background: var(--alura-books-quaternary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.alura-books-contact-description {
+    background: var(--alura-books-quaternary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.alura-books-contact-input-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.alura-books-contact-input {
+    width: 80%;
+    padding: 0.625rem 1.5rem;
+    border-radius: 24px;
+    border: 1px solid var(--alura-books-senario-color);
+    background: var(--alura-books-quaternary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.alura-books-contact-input::placeholder {
+    font-family: var(--alura-books-font);
+    background: url(../assets/Email.svg) no-repeat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--alura-books-senario-color);
+    padding-left: 2rem;
+}
+
+.alura-books-contact-input-button {
+    border-radius: 50%;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    width: 4%;
+    height: 5%;
+    background-color: var(--alura-books-tertiary-color);
+    color: var(--alura-books-secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .alura-books-contact {
+        display: flex;
+        align-items: center;
+        padding:  1.875rem 9.375rem 3.19rem 9.375rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .alura-books-contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        width: 100%;
+    }
+
+    .alura-books-contact-title {
+        font-size: 1.5rem;
+    }
+
+    .alura-books-contact-description {
+        margin-bottom: 0rem;
+    }
+
+    .alura-books-contact-input-container {
+        display: flex;
+        gap: 0rem;
+        height: 44px;
+    }
+
+    .alura-books-contact-input {
+        padding: 0rem 1.5rem;
+        width: 100%;
+    }
+
+    .alura-books-contact-input-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .alura-books-contact {
+        padding:  4rem 29.81rem;
+    }
+}

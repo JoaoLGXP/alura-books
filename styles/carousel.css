@@ -1,0 +1,203 @@
+.alura-books-carousel-title {
+    text-align: center;
+    padding: 1.81rem 0 0.5rem 0;
+    background-color: var(--alura-books-secondary-color);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--alura-books-tertiary-color);
+    text-transform: uppercase;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.75rem 0 1rem 0;
+}
+
+.alura-books-recommendation-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--alura-books-secondary-color);
+    margin: 2rem 1rem;
+    padding: 1.25rem 1rem 2rem 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.alura-books-recommendation-section-top-itens {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.alura-books-recommendation-section-top-itens img {
+    height: 80%;
+}
+
+.alura-books-recommendation-section-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.alura-books-recommendation-section-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--alura-books-tertiary-color);
+}
+
+.alura-books-recommendation-section-book-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--alura-books-senario-color);
+}
+
+.alura-books-recommendation-section-book-description {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--alura-books-quinary-color);
+    margin-bottom: 8px;
+    line-height: 1.31rem;
+    letter-spacing: 1px;
+}
+
+.alura-books-recommendation-section-buttons {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.alura-books-recommendation-section-bottom-itens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alura-books-recommendation-section-bottom-itens-button {
+    background-color: var(--alura-books-tertiary-color);
+    color: var(--alura-books-secondary-color);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+}
+
+.alura-books-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.alura-books-author img {
+    width: 60%;
+    height: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .alura-books-carousel-title {
+        font-size: 1.625rem;
+        padding: 3.187rem 0 1rem 0;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+        color: var(--alura-books-senario-color);
+    }
+
+    .alura-books-recommendation-section {
+        margin: 5% 20%;
+    }
+
+    .alura-books-recommendation-section-top-itens {
+        display: flex;
+        gap: 60px;
+    }
+
+    .alura-books-recommendation-section-title {
+        font-size: 1.25rem;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .alura-books-recommendation-section-book-title {
+        font-size: 1.25rem;
+    }
+
+    .alura-books-recommendation-section-book-description {
+        font-size: 1rem;
+    }
+
+    .alura-books-recommendation-section-bottom-itens-button {
+        width: 28%;
+    }
+
+    .alura-books-author {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .alura-books-author img {
+        width: 91px;
+        height: 15px;
+        margin-bottom: 9px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .alura-books-carousel-title {
+        font-size: 2rem;
+        padding: 3.187rem 0 1rem 0;
+    }
+
+    .swiper-pagination {
+        margin: 0rem 0rem 2rem 0;
+    }
+
+    .swiper {
+        width: 55%;
+    }
+
+    .alura-books-swiper-more-recomendation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 10%;
+    }
+
+    .alura-books-recommendation-section {
+        margin: 0;
+        margin-left: 4.5rem;
+        width: 50%;
+        gap: 2.5rem;
+    }
+
+    .alura-books-recommendation-section-title {
+        font-size: 2rem;
+        line-height: 44px;
+        letter-spacing: 0px;
+    }
+
+    .alura-books-recommendation-section-book-title {
+        font-size: 1.125rem;
+    }
+
+    .alura-books-recommendation-section-bottom-itens-button {
+        width: 27%;
+    }
+}
